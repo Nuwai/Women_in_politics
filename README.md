@@ -70,8 +70,57 @@ summary/
 ├── PVTW.pbix
 
 README.md
-
 ```
+### Results & Findings
+
+## 1. Women's Representation in Parliament (2019–2024)
+
+- Regional Variation: Women’s representation in parliaments differs significantly across regions. Some countries;such as Yemen, Oman, and Tuvalu—had no female representatives in their lower chambers.
+- Impacting Factors:
+  - Population size and total parliamentary seats affect representation levels.
+  - Gender quotas and political system types (unicameral vs. bicameral) strongly influence women’s participation.
+- Top Performers: The top 10 Asian countries in 2024 show that structured gender quotas and supportive political systems correlate with higher representation.
+- Key Insight: While global representation is improving, regional and systemic inequalities persist—particularly in countries with unstable political systems or limited institutional support.
+
+## 2. Political Violence Targeting Women (PVTW)
+
+- Data Source: Analysis of ACLED PVTW data (2019–2024) shows political violence targeting women spans multiple forms—physical, verbal, and fatal attacks.
+- Most Common Event Types:
+  - Violence against civilians
+  - Protests and demonstrations
+  - Armed clashes
+- Regional Trends: Southeast Asia exhibited notable fluctuations in fatalities and PVTW incidents.
+  - Most frequent attacks were violence against civilians and political intimidation.
+  - Some regions experienced spikes during transitional political periods like Myanmar.
+
+## 3. Statistical Analysis
+
+- Hypothesis Tested:
+  - Is there a significant relationship between women’s representation in parliament and the level of political violence targeting women?
+- Methodology:
+  1. Spearman’s Rank Correlation
+  2. Negative Binomial Generalized Linear Model (GLM)
+  3. Mann-Whitney U Test (for skewed data distributions)
+- Results:
+  - A positive and statistically significant correlation was found between women’s representation and total fatalities during both transitional and non-transitional periods.
+  - During transitional periods, the relationship was stronger (coef = 0.0543, p = 0.006) — political instability amplifies violence.
+  - Even in non-transitional periods, the correlation remained significant (coef = 0.0582, p = 0.001), though with lower magnitude.
+- Conclusion:
+  - The **null hypothesis was rejected**, indicating that higher women’s representation is associated with increased political violence (PVTW events and fatalities). However, the severity and dynamics of violence depend on a country's transitional status and political stability.
+
+### Key Insights
+1. Representation ≠ Safety: Increasing women’s political participation does not automatically create safer environments.
+2. Political Instability Matters: Transitional governments face higher fatality rates and more violence against women in politics.
+3. Structural & Cultural Factors: Gender quotas, institutional frameworks, and societal attitudes shape both participation and vulnerability.
+4. Policy Implication: Strengthening legal frameworks and protection mechanisms is essential to safeguard women in political spaces.
+
+### Summary & Recommendations
+
+- **Understanding Political Violence**: Future work should investigate how regional dynamics, ideology, and media portrayal influence political violence against women.
+- **Focus on Stability**: Examine how governance and political transitions affect women’s safety in public roles.
+- **Cultural & Institutional Support**: Promote gender equality programs, accountability mechanisms, and legal protection systems to reduce targeted violence.
+- **Data-Driven Advocacy**: Encourage the use of datasets like IPU and ACLED to continuously monitor progress and risk factors.
+
 ### Key Deliverables
 
 - Notebooks: EDA, PVTW event analysis, and statistical testing
